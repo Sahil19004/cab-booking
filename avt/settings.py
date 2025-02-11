@@ -23,10 +23,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-vt$23d6j$h82=z#%9xdc9wacd7c2%9nr0ch&8ohpuu2-@h^_fh'
 APPEND_SLASH = False
-CSRF_TRUSTED_ORIGINS = [
-    'https://astcab.com',
-    'https://www.astcab.com'  # Add this if the site can be accessed with 'www'
-]
 CSRF_COOKIE_SECURE = True  # Use this if you're using HTTPS
 SESSION_COOKIE_SECURE = True  # Same here
 USE_X_FORWARDED_HOST = True
@@ -44,8 +40,8 @@ DEBUG = True
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 ALLOWED_HOSTS = ['*']
 EMAIL_HOST='smtp.gmail.com'
-EMAIL_HOST_USER='promotions.ast@gmail.com'
-EMAIL_HOST_PASSWORD='thqf yxba eqkl ydqv'
+EMAIL_HOST_USER='        '
+EMAIL_HOST_PASSWORD=''
 EMAIL_PORT=587
 EMAIL_USE_TLS=True 
 
