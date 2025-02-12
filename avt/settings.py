@@ -21,12 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-vt$23d6j$h82=z#%9xdc9wacd7c2%9nr0ch&8ohpuu2-@h^_fh'
-APPEND_SLASH = False
-CSRF_COOKIE_SECURE = True  # Use this if you're using HTTPS
-SESSION_COOKIE_SECURE = True  # Same here
-USE_X_FORWARDED_HOST = True
-SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
 import logging
 logging.basicConfig(level=logging.DEBUG)
 import os
@@ -37,13 +32,7 @@ os.environ['SSL_CERT_FILE'] = certifi.where()
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-ALLOWED_HOSTS = ['*']
-EMAIL_HOST='smtp.gmail.com'
-EMAIL_HOST_USER='        '
-EMAIL_HOST_PASSWORD=''
-EMAIL_PORT=587
-EMAIL_USE_TLS=True 
+
 
 ALLOWED_HOSTS = ['*']
 
@@ -148,10 +137,3 @@ STATIC_ROOT= os.path.join(BASE_DIR,'assets')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-
-GOOGLE_API_KEY = ('AIzaSyBpvDz913O7Q5yjT44cyeEwW2l8C4ggHdY')
-
-
-# settings.py
-RAZORPAY_KEY_ID = 'rzp_test_iuB1U9gIEu0NVZ'
-RAZORPAY_KEY_SECRET = 'byfDZbVNMDJQv5BIjZas9Cy9'
